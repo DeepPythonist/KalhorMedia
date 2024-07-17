@@ -1,0 +1,49 @@
+{% load static %}
+<footer class="pb-0">
+	<div class="container">
+		<hr>
+		<!-- Widgets START -->
+		<div class="row pt-5">
+			<!-- Footer Widget -->
+			<div class="col-md-6 col-lg-4 mb-4">
+				<p class="mt-3">کلهر مدیا : این وبسایت به صورت خودجوش  در جهت کمک به منافع اجتماعی و معرفی مناطق زاگرس نشین ساخته شده است</p>
+			</div>
+
+			<!-- Footer Widget -->
+			<div class="col-md-6 col-lg-3 mb-4">
+				<h5 class="mb-4">موضوعات کلهر مدیا</h5>
+				<div class="row">
+					<div class="col-6">
+						<ul class="nav flex-column">
+                            {% for cat in all_categories %}
+							    <li class="nav-item"><a class="nav-link pt-0" href="{% url 'category' cat.name %}">{{ cat.name }}</a></li>
+                            {% endfor %}
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Widget -->
+			<div class="col-sm-6 col-lg-3 mb-4">
+				<h5 class="mb-4">پربیننده ترین</h5>
+				<ul class="nav flex-column">
+                    {% for article in articles_by_view %}
+                        <li class="nav-item"><a class="nav-link pt-0" href="{% url 'article' article.title %}" class="btn btn-sm btn-primary-soft">{{ article.title|truncatewords:10 }} ...</a></li>
+                    {% endfor %}
+				</ul>
+			</div>
+
+			<!-- Footer Widget -->
+			<div class="col-sm-6 col-lg-2 mb-4">
+				<h5 class="mb-4">شبکه های اجتماعی</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a class="nav-link pt-0" href="https://t.me/KalhorMedia"><i class="fab fa-telegram fa-fw me-2 text-linkedin"></i>Telegram</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://instagram.com/KalhorMedia"><i class="fab fa-instagram-square fa-fw me-2 text-twitter"></i>Instagram</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://x.com/KalhorMedia"><i class="fab fa-twitter fa-fw me-2 text-linkedin"></i>Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Widgets END -->
+	</div>
+</footer>

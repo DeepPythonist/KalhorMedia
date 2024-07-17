@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+{% include 'base/head.html' %}
+
+<body>
+<!-- Preloader START -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="sh1"></div>
+			<div class="sh2"></div>
+		</div>
+	</div>
+<!-- Preloader END -->
+
+<!-- =======================
+Header START -->
+{% include 'base/header.html' %}
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Inner intro START -->
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 mx-auto pt-md-5">
+        <a href="{% url 'category' article.category %}" class="badge text-bg-danger mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>{{ article.category }}</a>
+				<h1>{{ article.title }}</h1>
+        <!-- Info -->
+        <ul class="nav nav-divider align-items-center">
+          <li class="nav-item">
+            <div class="nav-link">
+              با <a href="{% url 'author' article.author.full_name %}" class="text-reset btn-link">{{ article.author.full_name }}</a>
+            </div>
+          </li>
+          <li class="nav-item">{{ article.created_at }}</li>
+        </ul>
+        <img class="rounded mt-5" src="{{ article.image.url }}" alt="Image">
+      </div>
+    </div>
+	</div>
+</section>
+<!-- =======================
+Inner intro END -->
+
+<!-- =======================
+Main START -->
+<section class="pt-0">
+	<div class="container position-relative">
+		<div class="row">
+			<!-- Main Content START -->
+            {{ article.description| safe }}
+        </div>
+
+
+    </div>
+			<!-- Main Content END -->
+</section>
+<!-- =======================
+Main END -->
+
+<!-- =======================
+Tag and share END -->
+<section class="pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 mx-auto">
+				<div class="text-center">
+
+					<!-- Tags -->
+                    {% if article.keywords %}
+					<ul class="list-inline text-primary-hover mt-0 mt-lg-3">
+                    {% for i in keywords %}
+					  <li class="list-inline-item">
+					  	<a class="text-body" href="#">#{{ i }}</a>
+					  </li>
+                    {% endfor %}
+					</ul>
+                    {% endif %}
+				</div>
+			</div> <!-- row END -->
+		</div>
+	</div>
+</section>
+<!-- =======================
+Tag and share END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+{% include 'base/footer.html' %}
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="{% static 'vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Vendors -->
+<script src="{% static 'vendor/glightbox/js/glightbox.js' %}"></script>
+
+<!-- Template Functions -->
+<script src="{% static 'js/functions.js' %}"></script>
+
+</body>
+
+</html>
