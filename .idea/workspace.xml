@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21a7b8fc-e261-488c-85c8-9cc77511909a" name="Changes" comment="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project" />
+    <list default="true" id="21a7b8fc-e261-488c-85c8-9cc77511909a" name="Changes" comment="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +117,7 @@
       <workItem from="1721214118894" duration="16653000" />
       <workItem from="1721235682843" duration="7125000" />
       <workItem from="1721254554735" duration="5406000" />
-      <workItem from="1721303145972" duration="7398000" />
+      <workItem from="1721303145972" duration="8763000" />
     </task>
     <task id="LOCAL-00001" summary="v1 Kalhor Media Project">
       <option name="closed" value="true" />
@@ -141,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721311654792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project">
+      <option name="closed" value="true" />
+      <created>1721311821208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721311821208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
