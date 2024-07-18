@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21a7b8fc-e261-488c-85c8-9cc77511909a" name="Changes" comment="v1 Kalhor Media Project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/migrations/0002_alter_account_bio_alter_account_full_name_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/migrations/0003_alter_account_profile_picture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/migrations/0002_article_preview_description.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/migrations/0003_alter_article_preview_description.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/migrations/0004_alter_article_created_at_alter_article_updated_at_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/migrations/0005_article_video.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/migrations/0006_article_keywords.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Articles/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/templates/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/templates/about_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/templates/base/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/templates/base/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/templates/category_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home/templates/category_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="21a7b8fc-e261-488c-85c8-9cc77511909a" name="Changes" comment="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +115,7 @@
       <workItem from="1721214118894" duration="16653000" />
       <workItem from="1721235682843" duration="7125000" />
       <workItem from="1721254554735" duration="5406000" />
-      <workItem from="1721303145972" duration="7043000" />
+      <workItem from="1721303145972" duration="7398000" />
     </task>
     <task id="LOCAL-00001" summary="v1 Kalhor Media Project">
       <option name="closed" value="true" />
@@ -151,14 +133,34 @@
       <option name="project" value="LOCAL" />
       <updated>1721259253657</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project">
+      <option name="closed" value="true" />
+      <created>1721311654792</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721311654792</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1 Kalhor Media Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1 Kalhor Media Project" />
+    <MESSAGE value="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt &#10;add about_us.html to project&#10;add field Rank to project" />
   </component>
 </project>
