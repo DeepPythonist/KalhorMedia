@@ -8,6 +8,16 @@
 				<img class="navbar-brand-item light-mode-item" src="{% static 'images/logo-light.png' %}" alt="logo">
 				<img class="navbar-brand-item dark-mode-item" src="{% static 'images/logo-light.png' %}" alt="logo">
 			</a>
+            <div class="btn-group me-3" role="group" aria-label="font size changer">
+                <input type="radio" class="btn-check" name="fntradio" id="font-sm">
+                <label class="btn btn-xs btn-outline-primary mb-0" for="font-sm">A-</label>
+
+                <input type="radio" class="btn-check" name="fntradio" id="font-default" checked>
+                <label class="btn btn-xs btn-outline-primary mb-0" for="font-default">A</label>
+
+                <input type="radio" class="btn-check" name="fntradio" id="font-lg">
+                <label class="btn btn-xs btn-outline-primary mb-0" for="font-lg">A+</label>
+            </div>
 			<!-- Logo END -->
 
 			<!-- Responsive navbar toggler -->
@@ -80,20 +90,10 @@
 
 				<!-- Nav Button -->
 				<div class="nav-item d-none d-md-block">
-					<a href="{% url 'about' %}" class="btn btn-sm btn-danger mb-0 mx-2">همکاری</a>
+					<a href="{% url 'about' %}" class="btn btn-sm btn-danger mb-0 mx-2">درباره ما</a>
 				</div>
 				<!-- Nav Search -->
-				<div class="nav-item dropdown nav-search dropdown-toggle-icon-none">
-					<a class="nav-link pe-0 dropdown-toggle" role="button" href="#" id="navSearch" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="bi bi-search fs-4"> </i>
-					</a>
-					<div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
-					  <form class="input-group">
-					    <input class="form-control border-success" type="search" placeholder="جستجو" aria-label="Search">
-					    <button class="btn btn-success m-0" type="submit">جستجو</button>
-					  </form>
-					</div>
-				</div>
+
 			</div>
 			<!-- Nav right END -->
 		</div>

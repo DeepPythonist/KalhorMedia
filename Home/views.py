@@ -64,6 +64,7 @@ def category_detail(request, name):
         page_list = paginator.get_page(paginator.num_pages)
 
     context = {
+        'category_info': category_info,
         'ads': ads,
         'all_articles': all_articles,
         'page_list': page_list,
